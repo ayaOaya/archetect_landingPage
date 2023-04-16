@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react'
 import gsap from 'gsap'
-
-/* ##Add the new folder that containes SplitText from the github repo## */
 import SplitText from "../../utils/Split3.min.js"
-
-
 import "./style.scss"
 
 export default function Header() {
@@ -13,12 +9,6 @@ export default function Header() {
       type: "lines",
       linesClass: "lineChildren",
     });
-
-    const splitParentt = new SplitText("#header-text", {
-      type: "lines",
-      linesClass: "lineParent",
-    });
-
     gsap.to(split.lines, {
       duration:1,
       y:0,
@@ -26,7 +16,6 @@ export default function Header() {
       stagger:0.1,
       ease: "power2",
     });
-
   },[]);
 
   return (

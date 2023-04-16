@@ -7,8 +7,6 @@ export default function Navbar() {
         <div>menu</div>
         <div>Flirty Flowers</div>
         <div>cart</div>
-
-
     </div>
   )
 }

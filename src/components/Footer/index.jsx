@@ -4,15 +4,12 @@ import SectionHeader from '../SectionHeader';
 import SplitText from "../../utils/Split3.min.js";
 import cn from "classnames";
 import useOnScreen from '../../hooks/useOnScreen';
-
 import "./style.scss"
 
 export default function Footer() {
   const ref = useRef();
   const [reveal, setReveal] = useState(false);
-  
-
-  const onScreen = useOnScreen(ref);
+   const onScreen = useOnScreen(ref);
 
   useEffect(()=>{
     if (onScreen) setReveal(onScreen);
